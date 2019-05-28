@@ -1,0 +1,93 @@
+/* style.css
+ * This file provides css styles.
+ */
+
+body{
+	background-color: #3b4b54; width : 100%;
+	height: 100%;
+	margin: 0 auto;
+	color: #ffffff;
+}
+
+#controlsArea
+{
+	width: 99%;
+	height: 50px;
+	background-color: rgb(87,201,244);
+	position: absolute;
+	bottom: 0;
+	vertical-align: middle;
+	line-height: 50px;
+	text-align: left;
+	padding-left: 1%;
+}
+
+#chatArea
+{
+	width: 60%;
+	height: 500px;
+	background-color: #FFF;
+	display: inline-block;
+	position: relative;
+	color:#000;
+}
+
+#watson_chatbot
+{
+	overflow-y: scroll;
+	padding-bottom: 30px;
+	height: 350px;
+}
+
+input[type="text"]
+{
+	line-height: 30px;
+	border: 0px;
+	width: 60%;
+	padding-left: 10px;
+}
+
+input[type="button"]
+{
+	line-height: 30px;
+	height: 30px;
+	border: 0px;
+	margin:5px;
+	background-color: rgb(0,66,102);
+	color:#FFF;
+	cursor: pointer;
+}
+
+
+.cb_att
+{
+	text-align: left;
+	padding: 10px;
+	background-color: #EEE;
+}
+
+.cb_att_title
+{
+	color:rgb(0,158,259);
+	font-weight: bold;		
+}
+
+.cb_vtt
+{
+	text-align: right;
+padding: 10px;
+}
+
+.cb_vtt_title
+{
+	color:green;
+	font-weight: bold;		
+}
+
+#cb_title
+{
+	text-align: center;
+	color:black;
+	font-weight:bold;
+	padding:5px;
+}

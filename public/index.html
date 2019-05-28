@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>IBM Watson</title>
+			<link rel="stylesheet" href="css/custom.css">
+		  <meta charset="UTF-8">
+			<meta name="description" content="@lgbaeza Sample chatbot app with watson">
+			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+			<link rel="shortcut icon" href="favicon.png" type="image/png"/>
+
+    <title>IBM Watson</title>
+	</head>
+	<body style="margin:0px">
+		<table>
+			<tr>
+				<td class="watsonLandpage">
+					<img src="images/Watson-name.png"><br>
+					<img src="images/watson.gif"><br><br><br><br>
+					Hola, me llamo Watson, quién eres tú?<br><br>
+					<input type="text" id="name" class="input-text" placeholder="Captura tu nombre" onkeydown = "if (event.keyCode == 13) {document.getElementById('startConversation').click()}">
+					<input type="button" class="input-button" value="Iniciar" onkeyup="startChat()" id="startConversation" onclick="startChat()">
+				</td>
+			</tr>
+		</table>
+		
+		<script type="text/javascript" src="js/scripts.js">
+		</script>
+		
+	</body>
+</html>

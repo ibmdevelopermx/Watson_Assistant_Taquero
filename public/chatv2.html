@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="IBM Watson chatbot about Watson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="@lgbaeza Sample chatbot app with watson">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.png" type="image/png"/>
+
+    <title>IBM Watson</title>
+    
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/grids-responsive-min.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body onload="InitializeConversation()">
+
+	<div id="layout" class="pure-g"  style="overflow-y:hidden;">
+	    <div class="sidebar pure-u-1 pure-u-md-1-4">
+	        <div class="header">
+	        	<img src="images/watson-landing.png" width="150px">
+	            <h2>Breve descripción del caso de uso del chatbot</h2>
+				
+	        </div>
+	    </div>
+	
+	    <div id="divScrollPosts" class="content pure-u-1 pure-u-md-3-4">
+	        <div>
+	            <!-- A wrapper for all the blog posts -->
+	            <div style="padding-bottom:40px;max-height: 600px" id="divPosts">
+	
+	                
+	                
+	            </div>
+	
+				<div class="bottom_controls">
+					<input type="hidden" id="hiddenUsername">
+					<input type="text" class="input-text" id="watson_input" onkeydown = "if (event.keyCode == 13) {document.getElementById('button_Converse').click()}">
+					<input type="button" class="input-button" onClick="SendMessage()" id="button_Converse" value="Enviar">
+					<input type="button" class="input-button" onClick="RestartChat()" value="Reiniciar">
+					<input type="button" class="bottom-button" value="▼" onClick="scrollDownChat()">
+				</div>
+	
+				
+	            
+	        </div>
+	    </div>
+	</div>
+
+	
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+
+</body>
+</html>
