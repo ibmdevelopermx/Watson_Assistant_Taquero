@@ -9,8 +9,8 @@ var watson = require('watson-developer-cloud');
 var bodyParser = require('body-parser');
 
 //IAM
-var wconv_version_date = '2018-09-20';
-var wconv_workspaceId = '{your-workspace}';
+var wconv_version_date = '2020-02-02';
+var wconv_workspaceId = '222191df-9775-4fbe-ab10-94eab50940a9';
 var wconv_apikey = '{your-apikey}'
 var wconv_url = 'https://gateway.watsonplatform.net/assistant/api'
 
