@@ -119,23 +119,22 @@
 6. Añadimos un nuevo nodo llamado “ordenar” y en el engrane de “Customize” activamos los slots con el fin de que el usuario ingrese específicamente el numero y sabor del taco que ordenará.Despues en la parte inferior de la ventana activamos “Multiple responses” y amos clic en “Apply”.<br>
 ![](img/im29.png)<br>
 ![](img/im30.png)<br>
-7. Agregamos un "node" más como en los pasosn anteriores, a este le llamaremos "ordenar".<br>
-8. Para el intent “ordenar” necesitamos información más especifica del usuario como el número y el tipo de taco que ordenará, por lo cual, en la sección de “Then check for” programamos los slots para que le pida al usuario esos rubros forzosamente.<br>
+7. Para el intent “ordenar” necesitamos información más especifica del usuario como el número y el tipo de taco que ordenará, por lo cual, en la sección de “Then check for” programamos los slots para que le pida al usuario esos rubros forzosamente.<br>
 ![](img/im31.png)<br>
-9. En la sección de “Assitant responds” agregamos distintos tipos de respuesta, pueden ser de texto o con una imagen.<br>
-10. A continuación, se muestra como configurar que si la orden es superior a 10 tacos, se le otorgara una promoción al usuario.<br>
+8. En la sección de “Assitant responds” agregamos distintos tipos de respuesta, pueden ser de texto o con una imagen.<br>
+9. A continuación, se muestra como configurar que si la orden es superior a 10 tacos, se le otorgara una promoción al usuario.<br>
 ![](img/im32.png)<br>
-11. En la segunda respuesta configuramos que se responda con una imagen, para eso damos clic en el engrane.<br>
+10. En la segunda respuesta configuramos que se responda con una imagen, para eso damos clic en el engrane.<br>
 ![](img/im33.png)<br>
-12. En la siguiente ventana, damos clic en la lista desplegable y seleccionamos “image”.<br>
+11. En la siguiente ventana, damos clic en la lista desplegable y seleccionamos “image”.<br>
 ![](img/im34.png)<br>
-13. Asignamos una descripción de la imagen, buscamos en el navegador una imagen de tacos de pastor, copiamos la URL de la imagen, la pegamos en el espacio correspondiente y damos clic en “Save”.<br>
+12. Asignamos una descripción de la imagen, buscamos en el navegador una imagen de tacos de pastor, copiamos la URL de la imagen, la pegamos en el espacio correspondiente y damos clic en “Save”.<br>
 ![](img/im35.png)<br>
-14. Creamos un nuevo nodo llamado “cuenta” y en el engrane de “Customized” activamos los “Slots” y damos clic en “Apply”.<br>
+13. Creamos un nuevo nodo llamado “cuenta” y en el engrane de “Customized” activamos los “Slots” y damos clic en “Apply”.<br>
 ![](img/im36.png)<br>
-15. Para el intent “cobrar” tambien necesitamos información más específica del usuario como total de tacos que ordenó por lo cual, en la sección de “Then check for” programamos los slots para que se pida al usuario “Cuantos tacos fueron en total?” y le asignamos una variable “$number”.<br>
+14. Para el intent “cobrar” tambien necesitamos información más específica del usuario como total de tacos que ordenó por lo cual, en la sección de “Then check for” programamos los slots para que se pida al usuario “Cuantos tacos fueron en total?” y le asignamos una variable “$number”.<br>
 ![](img/im37.png)<br>
-16. En la sección de “Assistant responds” configuramos la respuesta que se le dará al usuario, para esto seguimos la sintaxis que se muestra a continuación para realizar la operación matemática, tomando en cuenta que el costo por taco es de 8 pesos.<br>
+15. En la sección de “Assistant responds” configuramos la respuesta que se le dará al usuario, para esto seguimos la sintaxis que se muestra a continuación para realizar la operación matemática, tomando en cuenta que el costo por taco es de 8 pesos.<br>
 ![](img/im38.png)<br>
 
 # Prueba del Asistente desde IBM Cloud
@@ -186,6 +185,7 @@
 20. Corremos el comando “ibmcloud target -cf“ para redirigirnos a nuestra organización y espacio predeterminados.<br>
 ![](img/im60.png)<br>
 ![](img/im61.png)<br>
+##Nota: Si te da problemas el comando se tiene que crear una organización y un espacio, estos se crean con los comandos: <ibmcloud account org-create NOMBREDELAORGANIZACIÓN> y <ibmcloud --cf create-space NOMBREDELESPACIO(preferentemente dev) -o NOMBREDELAORGANIZACIÓN>, Después puedes ejecutar el comando mencionado arriba sin ningún problema.
 21. Corremos el comando “ibmcloud cf push” para desplegar nuestra aplicación en la nube.<br>
 ![](img/im62.png)<br>
 22. Una vez que termine de cargar todo el proceso necesario de la terminal, nos arrojara un link en el cual podremos accesar a nuestra aplicación a través de internet, copiamos la dirección.<br>
