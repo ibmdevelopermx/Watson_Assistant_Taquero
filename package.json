@@ -11,7 +11,7 @@
     "cloudant": "^1.7.1",
     "express": "4.13.x",
     "express-session": "^1.15.6",
-    "pug": "^2.0.0-rc.2",
+    "pug": "^3.0.1",
     "watson-developer-cloud": "^3.13.0"
   },
   "repository": {},
